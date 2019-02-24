@@ -4,5 +4,5 @@ public class Bike {
 
 	private int number;
 	
-	
+	private String name;
 }
