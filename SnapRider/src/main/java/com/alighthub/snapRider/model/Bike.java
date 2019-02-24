@@ -5,4 +5,6 @@ public class Bike {
 	private int number;
 	
 	private String name;
+	
+	private String bname;
 }
