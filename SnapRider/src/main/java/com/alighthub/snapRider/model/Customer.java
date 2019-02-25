@@ -3,12 +3,14 @@ package com.alighthub.snapRider.model;
 public class Customer {
 
 	private int customerId;
-	private String customerFirstName;
+	private String customerName;
 	private String customerAddress;
-	private String customerEmail;
+	private String customerEmailId;
 	private String customerMobileNumber;
 	private String customerPassword;
-	
+	private String customerAdharNumber;
+	private String customerLicense;
+	private String customerLocation;
 	
 	
 	
@@ -18,11 +20,11 @@ public class Customer {
 	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
 	}
-	public String getCustomerFirstName() {
-		return customerFirstName;
+	public String getCustomerName() {
+		return customerName;
 	}
-	public void setCustomerFirstName(String customerFirstName) {
-		this.customerFirstName = customerFirstName;
+	public void setCustomerName(String customerFirstName) {
+		this.customerName = customerFirstName;
 	}
 	public String getCustomerAddress() {
 		return customerAddress;
@@ -30,11 +32,29 @@ public class Customer {
 	public void setCustomerAddress(String customerAddress) {
 		this.customerAddress = customerAddress;
 	}
-	public String getCustomerEmail() {
-		return customerEmail;
+	public String getCustomerEmailId() {
+		return customerEmailId;
 	}
-	public void setCustomerEmail(String customerEmail) {
-		this.customerEmail = customerEmail;
+	public void setCustomerEmailId(String customerEmail) {
+		this.customerEmailId = customerEmail;
+	}
+	public String getCustomerAdharNumber() {
+		return customerAdharNumber;
+	}
+	public void setCustomerAdharNumber(String customerAdharNumber) {
+		this.customerAdharNumber = customerAdharNumber;
+	}
+	public String getCustomerLicense() {
+		return customerLicense;
+	}
+	public void setCustomerLicense(String customerLicense) {
+		this.customerLicense = customerLicense;
+	}
+	public String getCustomerLocation() {
+		return customerLocation;
+	}
+	public void setCustomerLocation(String customerLocation) {
+		this.customerLocation = customerLocation;
 	}
 	public String getCustomerMobileNumber() {
 		return customerMobileNumber;
