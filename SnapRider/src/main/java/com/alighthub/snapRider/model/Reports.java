@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Reports {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int reportId;
 	private String reportName;
 	
@@ -26,7 +26,4 @@ public class Reports {
 	public void setReportName(String reportName) {
 		this.reportName = reportName;
 	}
-	
-	
-	
 }

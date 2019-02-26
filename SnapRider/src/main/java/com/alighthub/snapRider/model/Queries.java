@@ -10,13 +10,10 @@ public class Queries {
 	
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int queriesId;
 	private String queriesName;
 	private String queriesDescription;
-	
-	
-	
 	
 	public int getQueriesId() {
 		return queriesId;

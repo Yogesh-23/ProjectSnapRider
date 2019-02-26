@@ -11,7 +11,7 @@ import javax.persistence.Id;
 public class BikeDetails {
 
   @Id
-  @GeneratedValue(strategy=GenerationType.AUTO)
+  @GeneratedValue(strategy=GenerationType.IDENTITY)
   private int bikeId;
   private String bikeName;
   private String bikeModel;
@@ -19,9 +19,7 @@ public class BikeDetails {
   private String ManufactureYear;
   private Date bikeInsurance;
   private String bikeDocuments;
-// List<String> bikeImages;
-  
-  
+
 public int getBikeId() {
 	return bikeId;
 }
@@ -64,13 +62,15 @@ public String getBikeDocuments() {
 public void setBikeDocuments(String bikeDocuments) {
 	this.bikeDocuments = bikeDocuments;
 }
+
+
 /*public List<String> getBikeImages() {
 	return bikeImages;
 }
 public void setBikeImages(List<String> bikeImages) {
 	this.bikeImages = bikeImages;
 }
-  
+  */
 	
-*/	
+
 }

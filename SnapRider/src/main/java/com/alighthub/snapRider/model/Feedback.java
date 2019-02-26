@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Feedback {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int feedbackId;
 	private String feedbackStar;
 	private String feedbackDescription;
@@ -34,10 +34,4 @@ public class Feedback {
 	public void setFeedbackDescription(String feedbackDescription) {
 		this.feedbackDescription = feedbackDescription;
 	}
-	
-	
-	
-	
-	
-	
 }

@@ -11,7 +11,7 @@ import javax.persistence.Id;
 public class Login {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int loginId;
 	private String userName;
 	private String password;
@@ -34,6 +34,4 @@ public class Login {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	
 }

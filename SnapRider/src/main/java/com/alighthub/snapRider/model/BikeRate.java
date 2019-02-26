@@ -5,10 +5,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
+//@Entity
 public class BikeRate {
 
 	
+	private int perHours;
+	private int perDay;
+	private int perWeek;
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int bikeRateId;
@@ -17,6 +21,10 @@ public class BikeRate {
 	private int bikeRateperWeek;
 	public int getBikeRateId() {
 		return bikeRateId;
+	}
+	
+	public int getPerHours() {
+		return perHours;
 	}
 	public void setBikeRateId(int bikeRateId) {
 		this.bikeRateId = bikeRateId;

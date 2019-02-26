@@ -9,22 +9,15 @@ import javax.persistence.Id;
 public class CartDetails {
 
 	  @Id
-	  @GeneratedValue(strategy=GenerationType.AUTO)
+	  @GeneratedValue(strategy=GenerationType.IDENTITY)
 	  private int cartId;
 
 	  
-	public int getCartId() {
+	  public int getCartId() {
 		return cartId;
-	}
+	  }
 
-	public void setCartId(int cartId) {
+	  public void setCartId(int cartId) {
 		this.cartId = cartId;
-	}
-
-	 
-
-	 
-	 
-	 
-	
+	  }
 }
