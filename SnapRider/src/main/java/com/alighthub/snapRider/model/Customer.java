@@ -1,16 +1,22 @@
 package com.alighthub.snapRider.model;
 
 import javax.persistence.Entity;
+<<<<<<< HEAD
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+=======
+>>>>>>> branch 'master' of https://github.com/Yogesh-23/ProjectSnapRider.git
 import javax.persistence.Id;
 
 @Entity
 public class Customer {
 
 	@Id
+<<<<<<< HEAD
 	  @GeneratedValue(strategy=GenerationType.AUTO)
 
+=======
+>>>>>>> branch 'master' of https://github.com/Yogesh-23/ProjectSnapRider.git
 	private int customerId;
 	private String customerName;
 	private String customerAddress;

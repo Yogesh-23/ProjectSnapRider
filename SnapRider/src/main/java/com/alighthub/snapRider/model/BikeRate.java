@@ -1,32 +1,45 @@
 package com.alighthub.snapRider.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class BikeRate {
 
-	private int perHours;
-	private int perDay;
-	private int perWeek;
 	
-	public int getPerHours() {
-		return perHours;
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int bikeRateId;
+	private int bikeRateperHours;
+	private int bikeRateperDay;
+	private int bikeRateperWeek;
+	public int getBikeRateId() {
+		return bikeRateId;
 	}
-	public void setPerHours(int perHours) {
-		this.perHours = perHours;
+	public void setBikeRateId(int bikeRateId) {
+		this.bikeRateId = bikeRateId;
 	}
-	public int getPerDay() {
-		return perDay;
+	public int getBikeRateperHours() {
+		return bikeRateperHours;
 	}
-	public void setPerDay(int perDay) {
-		this.perDay = perDay;
+	public void setBikeRateperHours(int bikeRateperHours) {
+		this.bikeRateperHours = bikeRateperHours;
 	}
-	public int getPerWeek() {
-		return perWeek;
+	public int getBikeRateperDay() {
+		return bikeRateperDay;
 	}
-	public void setPerWeek(int perWeek) {
-		this.perWeek = perWeek;
+	public void setBikeRateperDay(int bikeRateperDay) {
+		this.bikeRateperDay = bikeRateperDay;
 	}
+	public int getBikeRateperWeek() {
+		return bikeRateperWeek;
+	}
+	public void setBikeRateperWeek(int bikeRateperWeek) {
+		this.bikeRateperWeek = bikeRateperWeek;
+	}
+	
 	
 	
 }
