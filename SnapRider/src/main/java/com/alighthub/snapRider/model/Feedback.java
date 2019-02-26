@@ -34,10 +34,4 @@ public class Feedback {
 	public void setFeedbackDescription(String feedbackDescription) {
 		this.feedbackDescription = feedbackDescription;
 	}
-	
-	
-	
-	
-	
-	
 }

@@ -19,7 +19,7 @@ public class BikeDetails {
   private String ManufactureYear;
   private Date bikeInsurance;
   private String bikeDocuments;
-  private List<String> bikeImages;
+//private List<String> bikeImages;
   
   
 public int getBikeId() {
@@ -64,13 +64,14 @@ public String getBikeDocuments() {
 public void setBikeDocuments(String bikeDocuments) {
 	this.bikeDocuments = bikeDocuments;
 }
-public List<String> getBikeImages() {
+
+/*public List<String> getBikeImages() {
 	return bikeImages;
 }
 public void setBikeImages(List<String> bikeImages) {
 	this.bikeImages = bikeImages;
 }
-  
+  */
 	
 	
 }

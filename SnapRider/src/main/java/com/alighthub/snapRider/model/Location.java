@@ -10,6 +10,8 @@ public class Location {
 	 @GeneratedValue(strategy=GenerationType.AUTO)
 	private int locationId;
 	private String locationName;
+	
+	
 	public int getLocationId() {
 		return locationId;
 	}

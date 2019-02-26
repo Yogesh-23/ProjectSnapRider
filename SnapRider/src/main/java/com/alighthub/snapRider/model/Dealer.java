@@ -7,14 +7,18 @@ import javax.persistence.Id;
 
 @Entity
 public class Dealer {
+	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	
 	private int dealerId;
 	private String dealerFirstName;
 	private String dealerAddress;
 	private String dealerEmail;
 	private int dealerMobileNumber;
 	private String dealerPassword;
+	
+	
 	public int getDealerId() {
 		return dealerId;
 	}
@@ -51,11 +55,4 @@ public class Dealer {
 	public void setDealerPassword(String dealerPassword) {
 		this.dealerPassword = dealerPassword;
 	}
-	
-	
-	
-	
-	
-	
-
 }

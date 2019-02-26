@@ -2,12 +2,14 @@ package com.alighthub.snapRider.model;
 
 import javax.persistence.Entity;
 
-@Entity
+//@Entity
 public class BikeRate {
 
+	
 	private int perHours;
 	private int perDay;
 	private int perWeek;
+	
 	
 	public int getPerHours() {
 		return perHours;
