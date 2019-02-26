@@ -11,7 +11,7 @@ import javax.persistence.Id;
 public class BikeDetails {
 
   @Id
-  @GeneratedValue(strategy=GenerationType.AUTO)
+  @GeneratedValue(strategy=GenerationType.IDENTITY)
   private int bikeId;
   private String bikeName;
   private String bikeModel;

@@ -25,9 +25,4 @@ public class Location {
 		this.locationName = locationName;
 	}
 	
-	
-
-	
-	
-	
 }

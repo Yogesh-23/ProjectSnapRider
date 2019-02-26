@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class BikeImages {
 	
 	//@Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int bikeImagesId;
 	private String bikeImagesName;
 	
